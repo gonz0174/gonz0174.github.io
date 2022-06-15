@@ -3,17 +3,30 @@ body {
     font-size: 18px;
 }
 
+.home {
+    text-decoration: none;
+    background-color: lightblue;
+    border: 2.5px solid darkmagenta;
+}
+
+.home a:hover, a:active {
+    text-decoration: none;
+    background-color: darkmagenta;
+    color: lightblue;
+    border: 2.5px solid lightblue;
+}
+
 .html-notes {
     text-decoration: none;
     background-color:lightblue;
-    border: 2.5px dotted darkmagenta;
+    border: 2.5px solid darkmagenta;
 }
 
 .html-notes a:hover, a:active {
     text-decoration: none;
     background-color: darkmagenta;
     color: lightblue;
-    border: 2.5px dotted lightblue;
+    border: 2.5px solid lightblue;
 }
 
 header, footer {
