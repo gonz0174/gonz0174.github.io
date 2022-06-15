@@ -3,16 +3,34 @@ body {
     font-size: 18px;
 }
 
+.html-notes {
+    text-decoration: none;
+    background-color:lightblue;
+    border: 2.5px dotted darkmagenta;
+}
+
+.html-notes a:hover, a:active {
+    text-decoration: none;
+    background-color: darkmagenta;
+    color: lightblue;
+}
+
 header, footer {
     background-color: lightblue;
 }
 
-h1 {
-    color:darkmagenta;
+.site-title {
+    color: darkmagenta;
 }
 
+#my-image {
+    box-shadow: 0px 0px 2px 1px black;
+}
 
-
-ul {
+.customize-bullets {
     list-style-type: square;
+}
+
+.customize-bullets li:nth-child(odd) {
+    background: azure;
 }
