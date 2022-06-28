@@ -11,12 +11,14 @@ body {
 
     max-width: 1000px;
     margin: auto;
+    padding: 16px;
 }
 
 header {
-    position:relative;
+    position: relative;
     max-width: 1000px;
     margin: 0 auto;
+    padding: 0;
 }
 
 header img {
@@ -30,7 +32,7 @@ h1 {
 
     position: absolute;
     top: 150px;
-    width: 1000px;
+    width: 100%;
     text-align: center;
 }
 
@@ -60,11 +62,39 @@ article img {
 h2 {
     font-size: 24pt;
     font-weight:500;
+    margin: 16px 0px;
+}
+
+h3 {
+    font-size: 20pt;
+    font-weight: 400;
+    margin: 16px 0px;
 }
 
 .form-contact {
     margin: 0px;
-    border: solid  black;
+    border: 1px solid black;
+    padding: 15px;
+}
+
+.form-contact label {
+    margin-top: 20px;
+    display: block;
+    font-size: 12pt;
+    font-weight: 400;
+}
+
+.radio label {
+    display: inline-block
+}
+
+h4 {
+    font-size: 16pt;
+    font-weight:500;
+}
+
+.button {
+    text-transform: uppercase;
 }
 
 footer {
