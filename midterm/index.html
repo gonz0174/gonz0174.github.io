@@ -38,27 +38,40 @@
                 <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
             </ul>
         </article>
+
         <h3>Contact to learn more</h3>
-        <div id="formulary">
+        <form class="form-contact" action="#" method="post">
             <label for="name">Your Name</label>
-            <input type="text" name="name">
+            <input type="text" class="controls" name="name" id="name">
+
             <label for="email">Your Email</label>
-            <input type="email" name="email">
+            <input type="email" class="controls" name="email" id="email">
+
             <label for="message">Your Message</label>
-            <input type="text" name="message">
-        </div>
-        <div id="question-answer">
-            <label for="question">Would you like to visit the starfish?</label>
-            <label for="yes">Yes</label>
-            <input type="radio" checked>
-            <label for="no">No</label>
-            <input type="radio" checked>
-            <label for="maybe">Maybe</label>
-            <input type="radio" checked>
-        </div>
+            <input type="text" class="controls" name="message" id="message">
+
+            <div class="radio">
+                <h4>Would you like to visit the starfish?</h4>
+
+                <label for="yes">Yes</label>
+                <input type="radio" name="question" id="yes">
+
+                <label for="no">No</label>
+                <input type="radio" name="question" id="no">
+
+                <label for="maybe">Maybe</label>
+                <input type="radio" name="question" id="maybe">
+            </div>
+
+                <input class="button" type="button" value="Send">
+        </form>
+
         <footer>
             &copy; Lone Starfish.
         </footer>
+
     </div> 
+
 </body>
+
 </html>
