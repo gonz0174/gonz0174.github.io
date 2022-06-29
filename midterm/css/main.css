@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     background-color: #aad4cf;
     
@@ -9,11 +15,18 @@ body {
 
     max-width: 1000px;
     margin: auto;
-    padding: 16px;
+    padding: 0;
+}
+
+.container {
+    width: auto;
+    margin: 0 auto;
+    position: relative;
 }
 
 header {
     position: relative;
+
     max-width: 1000px;
     margin: 0 auto;
     padding: 0;
@@ -25,13 +38,14 @@ header img {
 }
 
 h1 {
+    position: absolute;
+
+    top: 55%;
+    width: 100%;
+
     color: white;
     font-size: 45pt;
     font-weight:500;
-
-    position: absolute;
-    top: 150px;
-    width: 100%;
     text-align: center;
 }
 
@@ -87,9 +101,11 @@ h3 {
 
 .form-contact label {
     margin-top: 20px;
+
     display: block;
+    
     font-size: 12pt;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .controls {
@@ -125,7 +141,7 @@ h4 {
     display: block;
     
     text-transform: uppercase;
-    font-weight: 400;   
+    font-weight: 500;   
 }
 
 footer {
