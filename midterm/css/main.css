@@ -6,7 +6,7 @@
 
 body {
     background-color: #aad4cf;
-    
+
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -54,9 +54,18 @@ nav {
 }
 
 nav ul li {
+    float: left;
+}
+
+nav ul li {
     display: inline-block;
+
     text-align: center;
-    width: 30.33%;
+
+    width: 33%;
+    height: 40px;
+
+    margin-bottom: 30px;
 }
 
 nav ul li:first-child,
@@ -74,23 +83,35 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-article img {
-    float: left;
-
-    max-width: 230px;
-    padding: 0 30px 30px 0px;
-}
-
 h2 {
     font-size: 24pt;
     font-weight:500;
     margin: 16px 0px;
 }
 
+article img {
+    float: left;
+
+    max-width: 240px;
+    padding: 0 20px 30px 0px;
+}
+
+article {
+    margin: 10px 20px 10px 10px;
+}
+
 h3 {
     font-size: 20pt;
     font-weight: 400;
     margin: 16px 0px;
+}
+
+article p {
+    font-size: 12.5pt;
+}
+
+article ul li {
+    margin: 0px 20px 0px 15px;
 }
 
 .form-contact {
