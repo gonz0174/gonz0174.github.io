@@ -166,7 +166,7 @@ h4 {
     font-size: 16pt;
     font-weight:500;
 }
-/*Style the button that goes inside the form, in this case with a solid black border, has a margin and padding; displayed in block; also the text is in an uppercase; with a background color equal to the content of the wrapper.*/
+/*Style the button that goes inside the form, in this case with a solid black border, has a margin and padding; displayed in an inline block; also the text is in an uppercase; with a background color equal to the content of the wrapper.*/
 .button {
     margin: 5px 0;
     padding: 10px;
@@ -174,7 +174,7 @@ h4 {
     
     background-color: #D4E9E7;
     
-    display: block;
+    display: inline-block;
     
     text-transform: uppercase;
     font-weight: 500;   
