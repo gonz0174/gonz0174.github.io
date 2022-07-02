@@ -1,36 +1,51 @@
+<!--We always start with DOCTYPE to allow the browser to understand what version of HTML we are using.-->
 <!DOCTYPE html>
 <html lang="en">
+<!--Here is the general information of the document, it includes the Title, Script Links and Style Sheet.-->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--It is the title of the document that is displayed in the Browser or in the navigation bar on a Web Page.-->
     <title>Lone Starfish - gonz0174 - Midterm</title>
+    <!--To connect the HTML document with the CSS style sheet.-->
     <link href="css/main.css" rel="stylesheet">
 </head>
+<!--The body is the content of the document-->
 <body>
-    <!-- use a wrapper to set as width and center the content -->
+    <!-- use a wrapper to set as width and center the content.-->
     <div class="wrapper">
         <div class="container">
-            <!-- header has an image with text positioned over top -->
+            <!-- header has an image with text positioned over top.-->
             <header>
+                <!--Most important heading level that functions as Title, in this case is "Lone Starfish".-->
                 <h1>Lone Starfish</h1>
+                <!--Represents an image in the document. Alt is used as text equivalent to the image.-->
                 <img src="images/lone-starfish-wide.jpg" alt="Starfish">
             </header>
         </div>
+        <!--We have 3 navigation links (Home, Story, and Contact) displayed inline.-->
         <nav>
+            <!--We have an unordered list of the 3 navigation links.-->
             <ul>
+                <!--Each unordered list will contain an opening list with an Anchor or Link. For this exercise it does not take us to any location within the same page or any other, that's why the anchor is empty.-->
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Story</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
         </nav>
+        <!--Define the information with an h2, a small image on the left side of the paragraph and an h3 with opening lists.-->
         <article>
             <div>
+                <!--Heading level 2 of the document. For this exercise is Life of a Starfish.-->
                 <h2> Life of a Starfish</h2>
+                <!--Represents an image in the document with a float to the left of the paragraph. Alt is used as text equivalent to the image.-->
                 <img src="images/lone-starfish.jpg" alt="Small Starfish">
+                <!--It will contain the text in 1 paragraph.-->
                 <p>Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.</p>
-            
+                <!--Heading level 3 of the document. It is like the subtitle of h2.-->
                 <h3>Facts About Starfish</h3>
+                <!--Have an unordered list for 4 bullet points of short sentences.-->
                 <ul>
                     <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
                     <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
@@ -41,6 +56,7 @@
         </article>
 
         <h3>Contact to learn more</h3>
+        <!--Contact form contained in a black border, 3 labels (Name, Email and Message) with their respective inputs. In action it will be empty because for this exercise it does not have a place to send the form data.-->
         <form class="form-contact" action="#" method="post">
             <label for="name">Your Name</label>
             <input type="text" class="controls" name="name" id="name">
@@ -51,6 +67,7 @@
             <label for="message">Your Message</label>
             <textarea name="message" class="message" id="message"></textarea>
 
+            <!--Additionally, will have a question ("Would like to visit Starfish") and the answer is in a Radio type input with their respective labels (Yes, No, Maybe).-->
             <div class="radio">
                 <h4>Would you like to visit the starfish?</h4>
 
@@ -63,10 +80,11 @@
                 <label for="maybe">Maybe</label>
                 <input type="radio" name="question" id="maybe">
             </div>
-
-                <input class="button" type="button" value="Send">
+            <!--Finally, a button with type submit so that it has the action of sending.-->
+            <input class="button" type="submit" value="Send">
         </form>
 
+        <!--Contains the Copyright of Lone Starfish-->
         <footer>
             &copy; Lone Starfish.
         </footer>
