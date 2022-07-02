@@ -10,7 +10,7 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
 }
-
+/*Absolutely everything inside the body is inside a wrapper so that everything would have these specifications with a max-width and a background color.*/
 .wrapper {
     background-color: #D4E9E7;
 
@@ -18,13 +18,13 @@ body {
     margin: auto;
     padding: 0;
 }
-
+/*I put a container class so that it would only take the heading and that it would be adjusted with the following specifications*/
 .container {
     width: auto;
     margin: 0 auto;
     position: relative;
 }
-
+/*For the header contains an image and a text (h1) centered to the page. For the h1 is in a position absolute because will find a parent element that has the relative position, that in this case is the header.*/
 header {
     position: relative;
 
@@ -49,7 +49,7 @@ h1 {
     font-weight:500;
     text-align: center;
 }
-
+/*The navigation unordered list with their opening list is located inline but each link or anchor is in an inline block, so I could modified the widht and height, and also the margin.*/
 nav {
     display: inline;
 }
@@ -68,12 +68,12 @@ nav ul li {
 
     margin-bottom: 30px;
 }
-
+/*The first (HOME) and second (STORY) navigation links have a solid black line on the right edge*/
 nav ul li:first-child,
 nav ul li:nth-child(2) {
     border-right: 1px solid black;
 }
-
+/*For the navigation, each unordered list will contain an opening list with an Anchor or Link and the text is in uppercase, it does not have any type of decoration, the color of its letters is black, and the size is large, but not much as the h2.*/
 nav ul li a {
     color: black;
     font-size: 18pt;
@@ -82,13 +82,13 @@ nav ul li a {
     text-decoration: none;
     text-transform: uppercase;
 }
-
+/*For h2, as it is heading level 2, it needs to have a size-font smaller than h1, but bigger than h3 and h4 of the document. Also, has a margin to separate it from the image and the paragraph.*/
 h2 {
     font-size: 24pt;
     font-weight:500;
     margin: 16px 0px;
 }
-
+/*The article have an image with a float to the left of the paragraph. Also, that image as I could see in the teacher's mock, have a margin, a width and a height.*/
 article img {
     float: left;
 
@@ -96,23 +96,23 @@ article img {
     height: 260px;
     padding: 0 20px 30px 0px;
 }
-
+/*All the content of that is inside of the article have a margin.*/
 article {
     margin: 10px 20px 10px 10px;
 }
-
+/*Modifies every element that are h3 in HTML, but in this case for "Facts about Starfish" it have other margin than the other h3 that is not inside of the article. That's why I decided to separate them and have their own specifications*/
 article h3 {
     font-size: 20pt;
     font-weight: 500;
     
     margin: 16px 0px 10px 0px;
 }
-/*For the paragraph of the article, comparing it with the teacher's mock, I reached a font size of 12pt, but it was not enough to be the same, so I noticed that it had a slight space in the leading, therefore I applied a line-height of 1.3, and now it have the same space and size.*/
+/*For the paragraph of the article, as I could see in the teacher's mock, I reached a font size of 12pt, but it was not enough to be the same, so I noticed that it had a slight space in the leading, therefore I applied a line-height of 1.3, and now it have the same space and size.*/
 article p {
     font-size: 12pt;
     line-height: 1.3;
 }
-
+/*The unordered list with its opening lists as I could see in the teacher's mock it has a specific margin.*/
 article ul li {
     margin: 0px 20px 0px 15px;
 }
@@ -130,7 +130,7 @@ h3 {
     border: 1.5px solid black;
     padding: 15px;
 }
-/*The labels of the form according to the teacher's mock it was seen that they have a slight space between them, but more in the top part, also, are displayed in block. Finally, the font-size according to the teacher's mock it was seen that had the same size of the paragraph.*/
+/*The labels of the form, as I could see in the teacher's mock, it was seen that they have a slight space between them, but more in the top part, also, are displayed in block. Finally, the font-size according to the teacher's mock it was seen that had the same size of the paragraph.*/
 .form-contact label {
     margin-top: 20px;
     margin-bottom: 5px;
@@ -140,7 +140,7 @@ h3 {
     font-size: 12pt;
     font-weight: 500;
 }
-/*For the inputs of the "Your Name" and "Your Email" labels, according to the teacher's mock, it occupied a width of more or less 98% and a height of more or less 30px. I wanted that the font-size applied to this inputs were 12pt.*/
+/*For the inputs of the "Your Name" and "Your Email" labels, as I could see in the teacher's mock, it occupied a width of more or less 98% and a height of more or less 30px. I wanted that the font-size applied to this inputs were 12pt.*/
 .controls {
     width: 98%;
     height: 30px;
