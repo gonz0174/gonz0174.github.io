@@ -1,9 +1,10 @@
+/*It is used to select all the elements of the page and had the same format.*/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*Stylize the elements that are inside the body. In this case, it will have a slightly darker blue background color than the content and an Arial font.*/
 body {
     background-color: #aad4cf;
 
@@ -106,7 +107,7 @@ article h3 {
     
     margin: 16px 0px 10px 0px;
 }
-
+/*For the paragraph of the article, comparing it with the teacher's mock, I reached a font size of 12pt, but it was not enough to be the same, so I noticed that it had a slight space in the leading, therefore I applied a line-height of 1.3, and now it have the same space and size.*/
 article p {
     font-size: 12pt;
     line-height: 1.3;
@@ -115,7 +116,7 @@ article p {
 article ul li {
     margin: 0px 20px 0px 15px;
 }
-
+/*Modifies every element that are h3 in HTML, but in this case for "Contact to learn more" it have other margin than the other h3 that is inside of the article. That's why I decided to separate them and have their own specifications*/
 h3 {
     font-size: 20pt;
     font-weight: 500;
@@ -123,13 +124,13 @@ h3 {
     margin: 20px 10px 10px 10px;
 
 }
-
+/*For the form it should have a thin solid black border, also the respective margin to separate it from the h3 ("Contact to learn more") and the footer. Finally a padding, so that the inside of the formulary also had a space.*/
 .form-contact {
     margin: 10px 10px 10px 10px;
     border: 1.5px solid black;
     padding: 15px;
 }
-
+/*The labels of the form according to the teacher's mock it was seen that they have a slight space between them, but more in the top part, also, are displayed in block. Finally, the font-size according to the teacher's mock it was seen that had the same size of the paragraph.*/
 .form-contact label {
     margin-top: 20px;
     margin-bottom: 5px;
@@ -139,25 +140,25 @@ h3 {
     font-size: 12pt;
     font-weight: 500;
 }
-
+/*For the inputs of the "Your Name" and "Your Email" labels, according to the teacher's mock, it occupied a width of more or less 98% and a height of more or less 30px. I wanted that the font-size applied to this inputs were 12pt.*/
 .controls {
     width: 98%;
     height: 30px;
 
     font-size: 12pt;
 }
-
+/*In the input of the Message label I wanted it to have a width and a height, because in the teacher's mock it is shown with the same width as the other inputs, but higher.*/
 .message {
     width: 98%;
     height: 100px;
 }
-
+/*Modifies only the labels that is in the class of radio in HTML. Displayed in inline-block because I modified the margin of the labels. I could also modified the margin in the labels or in the button (explained later), but I also wanted to give space in the bottom to the labels that only apply it to the button.*/
 .radio label {
     margin-bottom: 10px;
 
     display: inline-block
 }
-
+/*Style only the element that contains h4 ("Would you like to visit the Starfish?"). According to the mock given by the teacher, it is noted that it has more margin above than below. Also, the font size a little smaller than the h3. */
 h4 {
     margin-top: 20px;
     margin-bottom: 10px;
@@ -165,7 +166,7 @@ h4 {
     font-size: 16pt;
     font-weight:500;
 }
-
+/*Style the button that goes inside the form, in this case with a solid black border, has a margin and padding; displayed in block; also the text is in an uppercase; with a background color equal to the content of the wrapper.*/
 .button {
     margin: 5px 0;
     padding: 10px;
@@ -178,7 +179,7 @@ h4 {
     text-transform: uppercase;
     font-weight: 500;   
 }
-
+/*Stylize the footer that goes to the end of the Web Page. In this case, it is located on the right of the page and contains a margin with a padding*/
 footer {
     margin: 10px 0px;
     padding: 20px 30px 30px 0;
