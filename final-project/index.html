@@ -8,26 +8,34 @@
     <script src="https://kit.fontawesome.com/c9f1b2e120.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!--For center and set the widht of the content-->
     <div class="wrapper">
+        <!--The header contains the image of the logo, the navigation and search bar with its respective icon. It also contains the "hero" class which is the h1, the paragraph and a "connect" link class with its respective icon-->
         <header>
-            <img src="images/logo.png" alt="Three golden stars">
-            <nav>
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <div class="search_link">
-                    <input type="text" class="controls" name="search" id="search" placeholder="Search">
-                    <i class="fa-solid fa-magnifying-glass"></i>
-                </div>
-            </nav>
-
+            <!--The nav will be displayed for mobile devices vertically and for desktop horizontally-->
+            <div class="top_nav">
+                <img src="images/logo.png" alt="Three golden stars">
+                <nav>
+                    <ul>
+                        <!--The class "active" element is to highlight or set a background color with black font color for mobile and desktop devices-->
+                        <li><a class="active" href="#">Home</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <!--This div with class "search_link" contains the input for the search and its respective icon-->
+                    <div class="search_link">
+                        <input type="text" class="controls" name="search" id="search" placeholder="Search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </nav>
+            </div>
+            <!--This div class "hero" contains h1, paragraph and a connect link class with its respective icon and it will be a hero image in the background. For mobile devices it will not have a margin, on the other hand, on desktop devices it will and it is going to be centered-->
             <div class="hero">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam tempora ullam quia iusto sunt aliquam dolor reiciendis distinctio nesciunt? Delectus maiores corporis vel veritatis ducimus fugiat porro nesciunt iure tenetur!</p>
+                <!--For this div class "connect link" contains their respective link with its respective icon-->
                 <div class="connect_link">
                     <a href="#">Connect with us</a>
                     <i class="fa-solid fa-caret-right"></i>
@@ -36,24 +44,23 @@
         </header>
 
         <main>
+            <!--For mobile devices it will be displayed vertically, but for desktop, the image will be to the right of the h2 and the two paragraphs.-->
             <div class="about_us">
-                <div class="container">
                     <img src="images/about-us.jpg" alt="Ping pong table">
                     <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero ipsum dolorem accusamus tenetur quod esse eveniet cumque doloribus blanditiis atque dignissimos perferendis, ab nemo. Quisquam corporis nulla quasi odit inventore.</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, molestias similique, atque nihil saepe, consectetur non esse exercitationem iste reprehenderit tempora et at quod voluptas! Explicabo perferendis saepe repudiandae ex?</p>
-                </div>
             </div>
-
+            <!--For this div class "our services" contains h2 and a another div class "grid" which contains other 5 divs with their respective image, h3, paragraph and link-->
             <div class="our_services">
+                <h2>Our Services</h2>
+                <!--A grid is going to be style in CSS part. For mobile devices will be displayed vertically, but for the desktop will be displayed: the first two services in the first row and the other three in the second row, in total will have 6 columns-->
                 <div class="grid">
-                    <div>
-                        <h2>Our Services</h2>  
-                    </div>
                     <div>
                         <img src="images/digital.jpg" alt="Laptop and cellphone">
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum eos dolorem magni ipsam porro molestias, id reiciendis cupiditate placeat ducimus, iure quisquam accusantium nobis quod modi. Facilis exercitationem laudantium architecto!</p>
+                        <!--For this div class "services link" link and the others that contain the same name class is because contains their respective link with its respective icon-->
                         <div class="services_link">
                             <a href="#">Digital Plans</a>
                             <i class="fa-solid fa-caret-right"></i>
@@ -102,88 +109,99 @@
                     </div>
                 </div>
             </div>
-
+            <!--An image will be in the background with everything that is inside of the class "our vision" on it-->
             <div class="our_vision">
-                <div class="container">
+                <div>
                     <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore reprehenderit impedit doloremque temporibus magni iusto fugit perferendis repellat nesciunt culpa repellendus maxime, hic labore corporis, cum, porro magnam itaque quas.</p>
+                    <!--For this div class "vision link" contains their respective link with its respective icon-->
                     <div class="vision_link">
                         <a href="#">Learn More</a>
                         <i class="fa-solid fa-caret-right"></i>    
                     </div>
                 </div>
             </div>
-
+            <!--This div class "our team" contains h2 and a div class "flexbox team". For mobile devices will be displayed vertically in a certain order and for desktop devices, the images go by the side of their respective h3, h4 and paragraph-->
             <div class="our_team">
-                <div>
-                    <h2>Our Team</h2>
-                </div>
-                <div>
-                    <img src="images/john.jpg" alt="John's Portrait">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque repudiandae corporis! Blanditiis ipsum alias dolore molestiae, ad, architecto eius eos nostrum pariatur necessitatibus voluptatum quos adipisci odit soluta magnam.</p>
-                </div>
-                <div>
-                    <img src="images/bob.jpg" alt="Bob's Portrait">
-                    <h3>Bob Rite</h3>
-                    <h4>CFO and Co-owner</h4>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque repudiandae corporis! Blanditiis ipsum alias dolore molestiae, ad, architecto eius eos nostrum pariatur necessitatibus voluptatum quos adipisci odit soluta magnam.</p>
+                <h2>Our Team</h2>
+                <div class= flexbox_team>
+                    <!--This will be nth-child(1)-->
+                    <div>
+                        <img src="images/john.jpg" alt="John's Portrait">
+                    </div>
+                    <!--This will be nth-child(2). This div class "container" contains h3, h4 and a paragraph, it has a class because everything with this name will have the same background color and specs-->
+                    <div class="container">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque repudiandae corporis! Blanditiis ipsum alias dolore molestiae, ad, architecto eius eos nostrum pariatur necessitatibus voluptatum quos adipisci odit soluta magnam.</p>
+                    </div>
+                    <!--This will be nth-child(3)-->
+                    <div>
+                        <img src="images/bob.jpg" alt="Bob's Portrait">
+                    </div>
+                    <!--This will be nth-child(4). This div class "container" contains h3, h4 and a paragraph, it has a class because everything with this name will have the same background color and spec-->
+                    <div class="container">
+                        <h3>Bob Rite</h3>
+                        <h4>CFO and Co-owner</h4>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque repudiandae corporis! Blanditiis ipsum alias dolore molestiae, ad, architecto eius eos nostrum pariatur necessitatibus voluptatum quos adipisci odit soluta magnam.</p>
+                    </div>
                 </div>
             </div>
-
+            <!--This div class "contact us" contains h2 and a div class "flexbox contact" which contains the formulary, location and a table-->
             <div class="contact_us">
-                <div class="flexbox">
-                    <div>
-                        <h2>Contact Us</h2>
-                    </div>
+                <h2>Contact Us</h2>
+                <!--A flexbox is going to be applied. For mobile devices is going to be displayed vertically and the order is going to be h2, formulary, table and location. For desktop devices is going to be the formulary next to the location and the table down of these two-->
+                <div class="flexbox_contact">
+                    <!--This div class "formulary" contain a contact form with its respective labels and inputs. Also, contain a button with a black background and with a color in the font. Is going to be the nth-child(1)-->
                     <div class="formulary">
                         <h3>Send us a message</h3>
                         <form class="form-contact" action="#" method="post">
                             <label for="name">Full Name</label>
                             <input type="text" class="controls" name="name" id="name">
-                        
+                            
                             <label for="email">Email</label>
                             <input type="email" class="controls" name="email" id="email">
-                        
+                            
                             <label for="message">Message</label>
                             <textarea name="message" class="message" id="message"></textarea>
 
                             <input class="button" type="submit" value="Send">
                         </form>
                     </div>
-                </div>
-                <div class="location">
-                    <h3>Location</h3>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d717635.2841879491!2d-76.96641470158308!3d45.36369111119804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1ses-419!2sca!4v1658956191517!5m2!1ses-419!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="hours_operation">
-                    <h3>Hours of operation</h3>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Days</th>
-                                <th>Hours</th>
-                            </tr>   
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Monday - Friday</td>
-                                <td>9 AM - 6 PM</td>
-                            </tr>
-                            <tr>
-                                <td>Saturday - Sunday</td>
-                                <td>Closed</td>
-                            </tr>  
-                        </tbody>
-                    </table>
+                    <!--This div class "location" for mobile devices goes below the table "hours of operation", and for desktops goes right next to the formulary-->
+                    <div class="location">
+                        <h3>Location</h3>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d717635.2841879491!2d-76.96641470158308!3d45.36369111119804!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20Ottawa%20Campus!5e0!3m2!1ses-419!2sca!4v1658956191517!5m2!1ses-419!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <!--This div class "hours operation" contain a table with its respective head and body. For mobile devices, it goes below the formulary, and for desktop, it goes below the formulary and location-->
+                    <div class="hours_operation">
+                        <h3>Hours of operation</h3>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Days</th>
+                                    <th>Hours</th>
+                                </tr>   
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday - Friday</td>
+                                    <td>9 AM - 6 PM</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday - Sunday</td>
+                                    <td>Closed</td>
+                                </tr>  
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </main>
-
+        <!--The footer contains two paragraphs with a copyright and a reference of where the images were taken-->
         <footer>
             <p>&copy; Copyright Three Star Media, 2020</p>
-            <p>All images are taken from <a href="#">Unplash</a></p>
+            <p>All images are taken from <a href="#">Unsplash</a></p>
         </footer>
     </div>
 </body>
