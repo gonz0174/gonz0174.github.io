@@ -57,11 +57,12 @@ table {
 
 body {
     font-family: open-sans, sans-serif;
+    font-size: 12pt;
 }
 
 .wrapper {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0;
 }
 
@@ -112,14 +113,13 @@ nav ul li:first-child {
 
 .search_link {
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
+    display: flex;
 }
 
 .search_link input {
     width: 95%;
     padding: 6px;
-
-    float: left;
 }
 
 .fa-magnifying-glass {
@@ -191,11 +191,67 @@ h1 {
 }
 
 h2 {
+    padding: 30px 0 24px;
+
     font-size: 35pt;
     font-weight: 600;
 }
 
 p {
+    margin-bottom: 15px;
+
     color: #222222;
     line-height: 1.5;
+}
+
+.our_services {
+    margin: 14px;
+
+    display: inline-block;
+}
+
+.our_services img {
+    width: 100%;
+    margin: auto;
+}
+
+.grid div {
+    margin-bottom: 14px;
+
+    background-color: #ffe6ac;
+}
+
+h3 {
+    padding: 30px 0 14px 14px;
+
+    font-size: 24pt;
+    font-weight: 600;
+}
+
+.our_services p {
+    margin: 0 auto;
+    padding: 14px 0 14px 14px;
+
+    color: #222222;
+    line-height: 1.5;
+}
+
+div .services_link {
+    margin: 0 0 14px 14px;
+    padding: 30px;
+
+    display: inline-block;
+
+    background-color: #222222;
+}
+
+.services_link a {
+    color: white;
+    
+    font-size: 16pt;
+    text-decoration: none;
+}
+
+.services_link .fa-caret-right {
+    color: white;
 }
