@@ -255,3 +255,45 @@ div .services_link {
 .services_link .fa-caret-right {
     color: white;
 }
+
+.our_vision {
+    width: 100%;
+    margin: 0 auto;
+    padding: 30px 0 14px;
+    height: 100%;
+
+    background: url("../images/vision.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.our_vision h3 {
+    color: white;
+}
+
+.our_vision p {
+    margin: 0 auto;
+    padding: 14px 0 14px 14px;
+
+    color: white;
+}
+
+.vision_link {
+    margin: 0 0 14px 14px;
+    padding: 30px;
+    border: 1px solid #c78c08;
+
+    display: inline-block;
+
+    background-color: #142A43;
+}
+
+.vision_link a {
+    color: white;
+
+    font-size: 16pt;
+    text-decoration: none;
+}
+
+.vision_link .fa-caret-right {
+    color: white;
+}
