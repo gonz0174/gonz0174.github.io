@@ -133,8 +133,8 @@ nav ul li:first-child {
 .hero {
     width: 100%;
     margin: 0 auto;
-    padding: 30px 0 14px;
-    height: 100%;
+    padding: 100px 0 30px;
+    height: 600px;
 
     background: url("../images/main-banner.jpg") center center no-repeat;
     background-size: cover;
@@ -170,6 +170,8 @@ h1 {
 
 .connect_link a {
     color: #222222;
+
+    font-size: 16pt;
     text-decoration: none;
 }
 
@@ -212,7 +214,7 @@ p {
 
 .our_services img {
     width: 100%;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .grid div {
@@ -296,4 +298,108 @@ div .services_link {
 
 .vision_link .fa-caret-right {
     color: white;
+}
+
+.our_team, .contact_us {
+    width: 100%;
+    margin: 0 auto;
+    padding: 14px;
+
+    display: inline-block;
+}
+
+.our_team img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container {
+    margin-bottom: 14px;
+
+    background-color: #ffe6ac;
+}
+
+.container h4 {
+    margin: 0 14px 0 14px;
+    padding-bottom: 4px;
+    border-bottom: 2px solid #c78c08;
+
+    font-weight: 600;
+}
+
+.container p {
+    margin: 0 auto;
+    padding: 14px 14px 30px;
+
+    color: #222222;
+}
+
+.contact_us h3 {
+    padding: 14px 0;
+}
+
+.formulary label {
+    width: 100%;
+    margin: 14px 0;
+    display: inline-block;
+}
+
+.controls {
+    width: 100%;
+    height: 30px;
+}
+
+.message {
+    width: 100%;
+    height: 100px;
+}
+
+.button {
+    margin: 14px 0;
+    padding: 6px 4px;
+    border: 1px solid #222222;
+
+    background-color: #222222;
+    color: #c78c08;
+
+    font-size: 14pt;
+}
+
+.hours_operation table {
+    width: 100%;
+    margin-bottom: 14px;
+}
+
+table, thead, tbody, tr, th, td {
+    padding: 14px 0;
+    border: 1px solid #222222;
+}
+
+thead {
+    background-color: #ffe6ac;
+}
+
+td {
+    padding-left: 14px;
+}
+
+.location, iframe {
+    width: 100%;
+    height: 450px;
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 24px 0 10px;
+
+    background-color: #222222;
+}
+
+footer p, a {
+    margin: 0 auto;
+    color: #c78c08;
+}
+
+footer p {
+    padding: 6px 14px;
 }
