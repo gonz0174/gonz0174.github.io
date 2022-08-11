@@ -10,16 +10,16 @@
     <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
-    <!--For center and set the widht of the content-->
-    <div class="wrapper">
-        <!--The header contains the image of the logo, the navigation and search bar with its respective icon. It also contains the "hero" class which is the h1, the paragraph and a "connect" link class with its respective icon-->
-        <header>
-            <!--The nav will be displayed for mobile devices vertically and for desktop horizontally-->
-            <div class="top_nav">
+    <!--The header contains the image of the logo, the navigation and search bar with its respective icon. It also contains the "hero" class which is the h1, the paragraph and a "connect" link class with its respective icon-->
+    <header>
+        <!--The nav will be displayed for mobile devices vertically and for desktop horizontally-->
+        <nav class="top_nav">
+            <!--A class "wrapper" is for center and set the widht of the content-->
+            <div class="grid_nav wrapper">
                 <div class="logo_nav">
-                    <img src="images/logo.png" alt="Three golden stars">
+                    <img class="logo_nav" src="images/logo.png" alt="Three golden stars">
                 </div>
-                <nav>
+                <div>
                     <ul>
                         <!--The class "active" element is to highlight or set a background color with black font color for mobile and desktop devices-->
                         <li><a class="active" href="#">Home</a></li>
@@ -28,39 +28,46 @@
                         <li><a href="#">Team</a></li>
                         <li><a href="#">Contact</a></li>
                     </ul>
-                    <!--This div with class "search_link" contains the input for the search and its respective icon-->
-                    <div class="search_link">
-                        <input type="text" class="controls" name="search" id="search" placeholder="Search">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </div>
-                </nav>
-            </div>
-            <!--This div class "hero" contains h1, paragraph and a connect link class with its respective icon and it will be a hero image in the background. For mobile devices it will not have a margin, on the other hand, on desktop devices it will and it is going to be centered-->
-            <div class="hero">
-                <div class="hero_container">
-                    <h1>Welcome to Three Star Media</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusanda e voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!</p>
-                    <!--For this div class "connect link" contains their respective link with its respective icon-->
-                    <div class="connect_link">
-                        <a href="#">Connect with us</a>
-                        <i class="fa-solid fa-caret-right"></i>
-                    </div>
+                </div>
+                <!--This div with class "search_link" contains the input for the search and its respective icon-->
+                <div class="search_link">
+                    <input type="text" class="controls" name="search" id="search" placeholder="Search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
             </div>
-        </header>
+        </nav>
+        <!--This div class "hero" contains h1, paragraph and a connect link class with its respective icon and it will be a hero image in the background. For mobile devices it will not have a margin, on the other hand, on desktop devices it will and it is going to be centered-->
+        <div class="hero">
+            <div class="hero_container wrapper">
+                <h1>Welcome to Three Star Media</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rerum voluptas nesciunt quam nostrum similique nihil laboriosam provident neque, recusanda e voluptate temporibus! Animi accusamus id fuga voluptatibus facilis iusto consequuntur!</p>
+                <!--For this div class "connect link" contains their respective link with its respective icon-->
+                <div class="connect_link">
+                    <a href="#">Connect with us</a>
+                    <i class="fa-solid fa-caret-right"></i>
+                </div>
+            </div>
+        </div>
+    </header>
 
-        <main>
-            <!--For mobile devices it will be displayed vertically, but for desktop, the image will be to the left of the h2 and the two paragraphs.-->
-            <div class="about_us">
-                <img src="images/about-us.jpg" alt="Ping pong table">
-                <div class="section_text">
-                    <h2>About Us</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
+    <main>
+        <!--For mobile devices it will be displayed vertically, but for desktop, the image will be to the left of the h2 and the two paragraphs.-->
+        <div class="about_us">
+            <div class="wrapper">
+                <!-- A flexbox is going to be applied for desktop devices, so the image is next to the class "section text" -->
+                <div class="about_flexbox">
+                    <img src="images/about-us.jpg" alt="Ping pong table">
+                    <div class="section_text">
+                        <h2>About Us</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
+                    </div>
                 </div>
             </div>
-            <!--For this div class "our services" contains h2 and a another div class "grid" which contains other 5 divs with their respective image, h3, paragraph and link-->
-            <div class="our_services">
+        </div>
+        <!--For this div class "our services" contains h2 and a another div class "grid" which contains other 5 divs with their respective image, h3, paragraph and link-->
+        <div class="our_services">
+            <div class="wrapper">
                 <h2>Our Services</h2>
                 <!--A grid is going to be style in CSS part. For mobile devices will be displayed vertically, but for the desktop will be displayed: the first two services in the first row and the other three in the second row, in total will have 6 columns-->
                 <div class="grid">
@@ -117,20 +124,22 @@
                     </div>
                 </div>
             </div>
-            <!--An image will be in the background with everything that is inside of the class "our vision" on it-->
-            <div class="our_vision">
-                <div>
-                    <h3>Our Vision</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore reprehenderit impedit doloremque temporibus magni iusto fugit perferendis repellat nesciunt culpa repellendus maxime, hic labore corporis, cum, porro magnam itaque quas.</p>
-                    <!--For this div class "vision link" contains their respective link with its respective icon-->
-                    <div class="vision_link">
-                        <a href="#">Learn More</a>
-                        <i class="fa-solid fa-caret-right"></i>    
-                    </div>
+        </div>
+        <!--An image will be in the background with everything that is inside of the class "our vision" on it-->
+        <div class="our_vision">
+            <div class="wrapper">
+                <h3>Our Vision</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore reprehenderit impedit doloremque temporibus magni iusto fugit perferendis repellat nesciunt culpa repellendus maxime, hic labore corporis, cum, porro magnam itaque quas.</p>
+                <!--For this div class "vision link" contains their respective link with its respective icon-->
+                <div class="vision_link">
+                    <a href="#">Learn More</a>
+                    <i class="fa-solid fa-caret-right"></i>    
                 </div>
             </div>
-            <!--This div class "our team" contains h2, a div class "john flexbox", a div class "container" and a div class "bob flexbox". For mobile devices will be displayed vertically in a certain order and for desktop devices, the images go by the side of their respective h3, h4 and paragraph-->
-            <div class="our_team">
+        </div>
+        <!--This div class "our team" contains h2, a div class "john flexbox", a div class "container" and a div class "bob flexbox". For mobile devices will be displayed vertically in a certain order and for desktop devices, the images go by the side of their respective h3, h4 and paragraph-->
+        <div class="our_team">
+            <div class="wrapper">
                 <h2>Our Team</h2>
                 <div class= "john_flexbox">
                     <img src="images/john.jpg" alt="John's Portrait">
@@ -151,8 +160,10 @@
                     </div>
                 </div>
             </div>
-            <!--This div class "contact us" contains h2 and a div class "grid contact" which contains the formulary, location and a table-->
-            <div class="contact_us">
+        </div>
+        <!--This div class "contact us" contains h2 and a div class "grid contact" which contains the formulary, location and a table-->
+        <div class="contact_us">
+            <div class="wrapper">
                 <h2>Contact Us</h2>
                 <!--A grid is going to be applied. For mobile devices is going to be displayed vertically and the order is going to be h2, formulary, table and location. For desktop devices is going to be the formulary next to the location and the table down of these two-->
                 <div class="grid_contact">
@@ -201,12 +212,14 @@
                     </div>
                 </div>
             </div>
-        </main>
-        <!--The footer contains two paragraphs with a copyright and a reference of where the images were taken-->
-        <footer>
+        </div>
+    </main>
+    <!--The footer contains two paragraphs with a copyright and a reference of where the images were taken-->
+    <footer>
+        <div class="wrapper">
             <p>&copy; Copyright Three Star Media, 2020</p>
             <p>All images are taken from <a href="#">Unsplash</a></p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>

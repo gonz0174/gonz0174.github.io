@@ -48,18 +48,22 @@ table {
 	border-spacing: 0;
 }
 
+
 /* Here start my CSS styles */
+
+
+/* It is used to select all the elements of the page and had the same format */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/* Stylize the elements that are inside the body. In this case, everything is going to have an open-sans font */
 body {
     font-family: open-sans, sans-serif;
     font-size: 12pt;
 }
-
+/* Absolutely everything that has this class has a max-width */
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
@@ -77,15 +81,9 @@ header {
 }
 
 .logo_nav {
-    width: 100%;
-    padding: 0;
     display: block;
 
     background-color: #c78c08;
-}
-
-nav {
-    display: block;
 }
 
 nav ul li {
@@ -140,7 +138,6 @@ nav ul li:first-child {
 }
 
 .hero_container {
-    margin: 20% 0;
     padding: 30px 30px 14px 14px;
 
     background-color: rgba(0, 0, 0, .6);
@@ -160,7 +157,7 @@ h1 {
 }
 
 .connect_link  {
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 30px;
 
     display: inline-block;
@@ -274,7 +271,7 @@ div .services_link {
 
 .our_vision p {
     margin: 0 auto;
-    padding: 14px 0 14px 14px;
+    padding: 14px;
 
     color: white;
 }
@@ -388,7 +385,7 @@ td {
     height: 450px;
     margin-bottom: 20px;
 }
-
+/* Mobile Devices and Desktop has the same background color and color of the text. The only difference is going to be the padding of the father element */
 footer {
     padding: 24px 0 10px;
 
@@ -405,14 +402,17 @@ footer p {
 }
 
 /* Here start for Desktop Devices with Media Queries (760px and above) */
-@media screen and (min-width: 760px) { 
-    /* Setting the padding for all the content */
+
+@media screen and (min-width: 760px) {     
+    /* Setting the padding for all the content because Desktop devices had more than the Mobile */
     .top_nav, .hero, .about_us, .our_team, .our_vision, .our_services, .contact_us, footer {
         padding: 20px 90px 0;
     }
 
-    /* Setting the font size for h1, h2, h3 and h4. Also, the links, button, paragraphs, labels text and table text */
+    /* Setting the font size for h1, h2, h3 and h4. Also, for the links, button, paragraphs, labels text and table text */
+    /* For h1 a max width is going to be implemented, so that always keep the width */
     h1 {
+        max-width: 800px;
         font-size: 45pt;
     }
 
@@ -440,54 +440,59 @@ footer p {
         font-size: 10pt;
     }
 
-    /* Nav desktop */
-    /* .top_nav {
-        margin: 0 auto;
-        padding-top: 14px;
-        padding-bottom: 14px;
-
-        display: flex;
+    /* Nav Desktop is different from Mobile because the nav part, logo and search bar go next to each other */
+    /* A grid is going to be applied and it's going to have 3 columns (logo, nav, search bar) */
+    .grid_nav {
+        padding-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 5fr 1fr;
+        align-items: center;
+        align-content: center;
     }
 
-    .top_nav .logo_nav {
-        width: 30%;
-        margin-right: 14px;
+    .logo_nav {
+        width: 70px;
+        height: 70px;
+    }
+    /* In this part a flex is the best option, so that they are located horizontally and not vertically as in Mobile Devices  */
+    ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
-    .top_nav nav ul {
-        display: flex;
+    ul li a {
+        padding: 20px;
     }
-
-    .top_nav nav .search_link {
-        width: 30%;
-        display: flex;
-    } */
 
     /* Set the class hero container in the middle of the background image that is in the class hero */
     .hero {
         width: 100%;
-        margin: 0 auto;
-        padding: 20px 80px 40px;
+        height: 600px;
+
+        padding-top: 130px;
     }
 
     .hero_container {
-        margin: 2% 2%;
-        padding: 30px 100px 14px 14px;
+        padding: 30px 30px 14px 14px;
     }
 
-    /* About us desktop, a flexbox is going to be applied, so the image goes to the left of the information or to the class "section_text". Also both goes to the center and with the same widht */
+    /* About us Desktop, a flexbox is going to be applied, so the image goes to the left of the information or to the class "section_text". Also both has the same width */
     .about_us {
         width: 100%;
         margin: 0 auto;
         padding-top: 14px;
         padding-bottom: 14px;
+    }
 
+    .about_flexbox {
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
     }
 
     .about_us img {
-       width: 50%;
+        width: 50%;
     }
 
     .about_us .section_text {
@@ -496,12 +501,18 @@ footer p {
     }
 
 
-    /* Our services desktop, a grid is going to be applied, so will be displayed like: the first two services in the first row and the other three in the second row, in total will have 6 columns. Also the buttons of each one are more longer than Mobile Devices and the class "services_link" are centered the text */
+    /* Our services Desktop, a grid is going to be applied, so will be displayed like: the first two services in the first row and the other three in the second row, in total will have 6 columns. Also the buttons of each one are more longer than Mobile Devices and the class "services_link" are centered the text */
+    /* There's no margin in the class "our services" for Desktop Devices */
+    .our_services {
+        margin: 0 auto;
+        display: grid;
+    }
+
     .grid {
         display: grid;
         column-gap: 14px;
         grid-template-columns: repeat(6, 1fr);
-        grid-template-rows: repeat(2, 1fr);
+        grid-template-rows: 1fr .5fr;
     }
     .grid div:nth-child(1) {grid-column: 1 / 4;}
     .grid div:nth-child(2) {grid-column: 4 / 7;}
@@ -516,8 +527,19 @@ footer p {
         text-align: center;
     }
 
-    /* Our Team desktop, a flexbox is going to be applied, so the John image is next to his information text, and the image of bob is on the right of his information text (is in reverse) */
+    /* Our Vision Desktop. We need to delet the left padding for the paragraph and h3 that was put on Mobile Devices. Also, the left margin of the button */
+    .our_vision p, .our_vision h3 {
+        padding-left: 0;
+    }
+
+    .our_vision .vision_link {
+        margin-left: 0;
+    }
+
+    /* Our Team Desktop, a flexbox is going to be applied, so the John image is next to his information text, and the image of bob is on the right of his information text (is in reverse) */
+    /* Gap is going to be applied because there's no space between columns and rows */
     .our_team {
+        margin: 0 auto;
         gap: unset;
     }
 
@@ -531,6 +553,7 @@ footer p {
     }
 
     .our_team img {
+        width: 50%;
         margin: 0 auto;
     }
 
@@ -538,7 +561,7 @@ footer p {
         margin: 0;
     }
      
-    /* Contact us desktop is going to be the formulary next to the location and the table down of these two, for doing that a grid is going to be applied. The height of the map is more smaller than the Mobile Devices */
+    /* Contact us Desktop is going to be the formulary next to the location and the table down of these two, for doing that a grid is going to be applied. The height of the map is more smaller than the Mobile Devices */
     .grid_contact {
         display: grid;
         gap: 14px;
@@ -563,7 +586,7 @@ footer p {
         margin-bottom: 14px;
     }
 
-    /* Footer desktop have more space at the top than the Mobile Devices  */
+    /* Footer Desktop has more space at the top than the Mobile Devices  */
     footer {
         padding-top: 20px;
     }
