@@ -52,10 +52,12 @@
         <main>
             <!--For mobile devices it will be displayed vertically, but for desktop, the image will be to the left of the h2 and the two paragraphs.-->
             <div class="about_us">
-                    <img src="images/about-us.jpg" alt="Ping pong table">
+                <img src="images/about-us.jpg" alt="Ping pong table">
+                <div class="section_text">
                     <h2>About Us</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero unde repellendus exercitationem asperiores ducimus placeat, maxime soluta nesciunt pariatur aliquam consequuntur sequi saepe sint praesentium laboriosam perferendis eius amet ad?</p>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, velit ipsam? Atque accusamus, excepturi corrupti sunt reiciendis soluta quo commodi quidem, non perferendis vel sed facilis rerum cum in exercitationem?</p>
+                </div>
             </div>
             <!--For this div class "our services" contains h2 and a another div class "grid" which contains other 5 divs with their respective image, h3, paragraph and link-->
             <div class="our_services">
@@ -127,25 +129,21 @@
                     </div>
                 </div>
             </div>
-            <!--This div class "our team" contains h2 and a div class "flexbox team". For mobile devices will be displayed vertically in a certain order and for desktop devices, the images go by the side of their respective h3, h4 and paragraph-->
+            <!--This div class "our team" contains h2, a div class "john flexbox", a div class "container" and a div class "bob flexbox". For mobile devices will be displayed vertically in a certain order and for desktop devices, the images go by the side of their respective h3, h4 and paragraph-->
             <div class="our_team">
                 <h2>Our Team</h2>
-                <div class= flexbox_team>
-                    <!--This will be nth-child(1)-->
-                    <div>
-                        <img src="images/john.jpg" alt="John's Portrait">
-                    </div>
-                    <!--This will be nth-child(2). This div class "container" contains h3, h4 and a paragraph, it has a class because everything with this name will have the same background color and specs-->
+                <div class= "john_flexbox">
+                    <img src="images/john.jpg" alt="John's Portrait">
+                    <!--This div class "container" contains h3, h4 and a paragraph, it has a class because everything with this name will have the same background color and specs-->
                     <div class="container">
                         <h3>John Doe</h3>
                         <h4>CEO and Co-owner</h4>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias doloremque repudiandae corporis! Blanditiis ipsum alias dolore molestiae, ad, architecto eius eos nostrum pariatur necessitatibus voluptatum quos adipisci odit soluta magnam.</p>
                     </div>
-                    <!--This will be nth-child(3)-->
-                    <div>
-                        <img src="images/bob.jpg" alt="Bob's Portrait">
-                    </div>
-                    <!--This will be nth-child(4). This div class "container" contains h3, h4 and a paragraph, it has a class because everything with this name will have the same background color and spec-->
+                </div>
+                <div class="bob_flexbox">
+                    <img src="images/bob.jpg" alt="Bob's Portrait">
+                    <!-- This div class "container" contains h3, h4 and a paragraph, it has a class because everything with this name will have the same background color and spec-->
                     <div class="container">
                         <h3>Bob Rite</h3>
                         <h4>CFO and Co-owner</h4>
@@ -153,11 +151,11 @@
                     </div>
                 </div>
             </div>
-            <!--This div class "contact us" contains h2 and a div class "flexbox contact" which contains the formulary, location and a table-->
+            <!--This div class "contact us" contains h2 and a div class "grid contact" which contains the formulary, location and a table-->
             <div class="contact_us">
                 <h2>Contact Us</h2>
-                <!--A flexbox is going to be applied. For mobile devices is going to be displayed vertically and the order is going to be h2, formulary, table and location. For desktop devices is going to be the formulary next to the location and the table down of these two-->
-                <div class="flexbox_contact">
+                <!--A grid is going to be applied. For mobile devices is going to be displayed vertically and the order is going to be h2, formulary, table and location. For desktop devices is going to be the formulary next to the location and the table down of these two-->
+                <div class="grid_contact">
                     <!--This div class "formulary" contain a contact form with its respective labels and inputs. Also, contain a button with a black background and with a color in the font. Is going to be the nth-child(1)-->
                     <div class="formulary">
                         <h3>Send us a message</h3>
