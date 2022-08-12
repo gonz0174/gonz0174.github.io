@@ -69,17 +69,13 @@ body {
     margin: 0 auto;
     padding: 0;
 }
-
-header {
-    background-color: #222222;
-}
-
+/* The class "top nav" that contains the logo, nav, and search bar has a black background color */
 .top_nav {
     padding: 14px;
 
     background-color: #222222;
 }
-
+/* For Mobile Devices the Logo goes vertically (above of the menu part) */
 .logo_nav {
     display: block;
 
@@ -254,7 +250,7 @@ div .services_link {
 .services_link .fa-caret-right {
     color: white;
 }
-
+/* Our Vision Mobile Devices */
 .our_vision {
     width: 100%;
     margin: 0 auto;
@@ -400,6 +396,8 @@ footer p, a {
 footer p {
     padding: 6px 14px;
 }
+
+
 
 /* Here start for Desktop Devices with Media Queries (760px and above) */
 
