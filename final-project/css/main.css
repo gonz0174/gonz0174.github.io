@@ -81,14 +81,14 @@ body {
 
     background-color: #c78c08;
 }
-
+/* For Mobile Devices, the Menu goes vertically and the text centred */
 nav ul li {
     padding: 20px 14px;
     display: block;
 
     text-align: center;
 }
-
+/* The names of the menu go with a specific colour except for the Home part, which has black colour. Also, without a line down */
 nav ul li a {
     font-size: 10pt;
     
@@ -96,15 +96,15 @@ nav ul li a {
 
     text-decoration: none;
 }
-
+/* The class "active" element is to highlight or set a background color with black font color for mobile and desktop devices */
 .top_nav a.active {
     color: #222222;
 }
-
+/* The Home part goes with a specific background color */
 nav ul li:first-child {
     background-color: #c78c08;
 }
-
+/* The search bar goes with an icon, so is going to applied flex for been next to each other */
 .search_link {
     width: 100%;
     margin: 0 auto;
@@ -115,7 +115,7 @@ nav ul li:first-child {
     width: 95%;
     padding: 6px;
 }
-
+/* The icon contains a background color and other color for the border and the icon */
 .fa-magnifying-glass {
     padding: 6px;
     border: 1px solid #c78c08;
@@ -123,7 +123,7 @@ nav ul li:first-child {
     background-color: #222222;
     color: #c78c08;
 }
-
+/* For the hero part contains a background image and a class named "hero container" that is the h1, paragraph and a link with a background color that has opacity and a text color white */
 .hero {
     width: 100%;
     margin: 0 auto;
@@ -151,7 +151,7 @@ h1 {
     font-size: 10pt;
     line-height: 1.5;
 }
-
+/* For Mobile and Desktop, the link that was called the "connect link" has a specific background, text and Icon with a specific color */
 .connect_link  {
     margin-top: 10px;
     padding: 30px;
@@ -171,7 +171,7 @@ h1 {
 .fa-caret-right {
     padding-left: 10px;
 }
-
+/* For Mobile Devices everything goes vertically and with a background color. The text color is going to be black */
 .about_us {
     width: 100%;
     margin: 0 auto;
@@ -198,7 +198,7 @@ p {
     color: #222222;
     line-height: 1.5;
 }
-
+/* For Mobile Devices everything goes vertically. For Mobile and Desktop, the link has a specific background colour and the text with their Icon with a specific colour. Only the text part (h3, paragraph and link with their Icon) has a specific background colour, not the h2 */
 .our_services {
     margin: 14px;
 
@@ -209,7 +209,7 @@ p {
     width: 100%;
     margin: 0 auto;
 }
-
+/* For Mobile Devices will be displayed vertically. Only the text part (h3, paragraph and link with their Icon) has a specific background colour, not the h2. Finally, the link has a background color and a white text and Icon  */
 .grid div {
     margin-bottom: 14px;
 
@@ -250,7 +250,7 @@ div .services_link {
 .services_link .fa-caret-right {
     color: white;
 }
-/* Our Vision Mobile Devices */
+/* Our Vision Mobile Devices and Desktop has a background image. A white color text for the h3, paragraph and link. The link has a specific background color and a specific border color. */
 .our_vision {
     width: 100%;
     margin: 0 auto;
@@ -292,7 +292,7 @@ div .services_link {
 .vision_link .fa-caret-right {
     color: white;
 }
-
+/* For the team and contact part goes vertically and with some specifications */
 .our_team, .contact_us {
     width: 100%;
     margin: 0 auto;
@@ -305,13 +305,13 @@ div .services_link {
     width: 100%;
     margin: 0 auto;
 }
-
+/* The class "container" contains h3, h4 and a paragraph, it has a class because everything with this name will have the same background color and specs */
 .container {
     margin-bottom: 14px;
 
     background-color: #ffe6ac;
 }
-
+/* The h4 has a border down the text with a specific color */
 .container h4 {
     margin: 0 14px 0 14px;
     padding-bottom: 4px;
@@ -330,7 +330,7 @@ div .services_link {
 .contact_us h3 {
     padding: 14px 0;
 }
-
+/* The labels goes vertically */
 .formulary label {
     width: 100%;
     margin: 14px 0;
@@ -346,7 +346,7 @@ div .services_link {
     width: 100%;
     height: 100px;
 }
-
+/* The button of the formulary has a specific background color and the text another color */
 .button {
     margin: 14px 0;
     padding: 6px 4px;
@@ -357,7 +357,7 @@ div .services_link {
 
     font-size: 14pt;
 }
-
+/* The head of the table has a specific background color. Everything of the table will have a border with a black color */
 .hours_operation table {
     width: 100%;
     margin-bottom: 14px;
@@ -375,7 +375,7 @@ thead {
 td {
     padding-left: 14px;
 }
-
+/* For Mobile Devices has a specific height than the Desktop */
 .location, iframe {
     width: 100%;
     height: 450px;
